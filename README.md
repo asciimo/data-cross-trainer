@@ -9,3 +9,12 @@ Setting up flask
     pip install Flask
     pip install requests
     
+
+Setting up EC2
+===
+    sudo yum install git
+    git clone https://github.com/asciimo/data-cross-trainer.git
+    sudo pip install Flask
+    sudo python data_crosstrainer.py 
+    
+

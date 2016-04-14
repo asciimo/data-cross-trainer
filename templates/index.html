@@ -5,4 +5,5 @@
 {% endblock %}
 {% block content %}
   <h1>{{ title }}</h1>
+  <a href="https://www.strava.com/oauth/authorize?client_id={{ strava_client_id }}&response_type=code&redirect_uri={{ url_for('strava_auth_redirect') }}&scope=write&state=mystate&approval_prompt=auto"><img src="{{ url_for('static', filename='strava_login.png') }}" />
 {% endblock %}
