@@ -3,6 +3,8 @@ from flask import render_template
 from flask import request
 app = Flask(__name__)
 
+app.config['SERVER_NAME'] = 'datacrosstrainer.com'
+
 @app.route("/")
 def index():
     return render_template('index.html', title="Main application", strava_client_id="10279")
